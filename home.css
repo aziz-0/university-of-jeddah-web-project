@@ -1,0 +1,127 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container{
+    width: 1100px;
+    margin: 0 auto
+}
+
+header{
+    background-color: #303841;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+}
+
+nav h1{
+    color: #EEEEEE;
+    cursor: pointer;
+    border-bottom: 2px solid #FFD700
+}
+
+nav h1>a{
+    color: #EEEEEE;
+}
+
+nav ul{
+    display: flex;
+}
+nav li{
+    list-style: none;
+}
+nav li a{
+    color: #EEEEEE;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+nav li a:hover{
+    background-color:#3A4750
+}
+a{
+    text-decoration: none;
+}
+
+.section1{
+    background-color: #b8c6db;
+    background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+}
+
+
+.div{
+    display: flex;
+}
+.div div{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 30px;
+}
+.div div a{
+    width: 100px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    background-color: #FFD700;
+    color: #000;
+    text-align: center;
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+.div img{
+    flex-basis: 50%;
+    width: 500px
+}
+
+h3{
+    text-align: center;
+}
+
+.section2{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+hr{
+    margin: 10px 0;
+}
+
+.home-products{
+    display: flex;
+    justify-content: space-evenly;
+}
+.home-product{
+    position: relative;
+    width: 270px;
+    background: -webkit-linear-gradient(360deg, #dee1e1 10%, #f4f4f4 360%);
+    border-radius: 10px;
+}
+.home-product img{
+    width:100%
+}
+
+.home-product button{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    border: 1px solid #000;
+    border-radius: 20px;
+    padding: 8px 13px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color .3s, color .3s
+}
+.home-product button:hover{
+    background-color: #000;
+    color: #fff;
+}
